@@ -1,0 +1,13 @@
+.photos-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-rows: 200px 400px 200px;
+  row-gap: 16px;
+}
+
+.photos-list__item {
+  border-radius: 4px;
+  overflow: hidden;
+}

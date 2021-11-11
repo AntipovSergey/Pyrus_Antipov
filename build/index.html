@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Author: Sergey Antipov, Category: Cats, Length: 1 page">
+  <title>Котопочта</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/pTSans-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/pTSans-Narrow.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/pTSans-Bold.woff2" as="font" crossorigin>
+</head>
+<body>
+  <div class="site-container">
+    <header class="main-header">
+      <div class="container main-header__container">
+        <a class="main-header__logo">
+          <svg width="48" height="43"  xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#paw"></use>
+          </svg>
+          <span>Котопочта</span>
+        </a>
+        <div class="main-header__user-navigation user-navigation">
+          <ul class="user-navigation__links">
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="#">Забрать кота себе</a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="#">Задонатить на корм</a>
+            </li>
+          </ul>
+          <button class="user-navigation__button btn-reset" type="button">Войти</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Сайт Котопочты</h1>
+        <div class="container main__container">
+          <div class="main__content">
+            <h2>Как это работает?</h2>
+            <p>Наши коты любят, когда с ними разговаривают. Напишите письмо, и мы прочитаем его котам, когда они придут почесать пузо.</p>
+            <h2>Что передать котам?</h2>
+            <p>Можно рассказать где вы видели вкусных мышей, какого размера синицы прилетели в город, или просто интересную историю из жизни.</p>
+            <div class="main__form form">
+              <form method="POST" action="#" id="main__form">
+                <div class="form__message">
+                  <h3>Сообщение</h3>
+                  <textarea name="message" id="message" placeholder="Что-нибудь хорошее"></textarea>
+                </div>
+                <div class="form__options">
+                  <h3>Дополнительные опции</h3>
+                  <div class="form__checkbox">
+                    <input type="checkbox" class="checkbox" name="first-option" id="first-option" tabindex="0">
+                    <label for="first-option">Сделать пуньк в нос</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" class="checkbox" name="second-option" id="second-option" checked tabindex="0">
+                    <label for="second-option">Угостить вкусняшкой</label>
+                  </div>
+                </div>
+                <div class="form__contacts">
+                  <h3>Контакты для связи</h3>
+                  <div class="form__name">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" name="name" id="name">
+                  </div>
+                  <div class="form__email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="youremail@catmail.org">
+                  </div>
+                  <span>Мы вышлем вам фото довольного кошачьего лица</span>
+                </div>
+                <button class="form__button btn-reset" type="submit">
+                  <svg width="18" height="16"  xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#small-paw"></use>
+                  </svg>
+                  <span>Отправить</span>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="main__images">
+            <h3>Довольные коты</h3>
+            <ul class="main__photos-list photos-list">
+              <li class="photos-list__item">
+                <picture>
+                  <source srcset="img/image-first.webp 1x, img/image-first@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 300px; 2x: 600px -->
+                  <img src="img/image-first.jpg" srcset="img/image-first@2x.jpg" width="300" height="201" alt="Первая фотография">
+                </picture>
+              </li>
+              <li class="photos-list__item">
+                <picture>
+                  <source srcset="img/image-second.webp 1x, img/image-second@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 300px; 2x: 600px -->
+                  <img src="img/image-second.jpg" srcset="img/image-second@2x.jpg" width="300" height="401" alt="Вторая фотография">
+                </picture>
+              </li>
+              <li class="photos-list__item">
+                <picture>
+                  <source srcset="img/image-third.webp 1x, img/image-third@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 300px; 2x: 600px -->
+                  <img src="img/image-third.jpg" srcset="img/image-third@2x.jpg" width="300" height="401" alt="Третья фотография">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </main>
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
