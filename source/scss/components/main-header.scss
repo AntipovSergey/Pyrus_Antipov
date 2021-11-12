@@ -30,3 +30,15 @@
   font-size: 64px;
   line-height: 83px;
 }
+
+@media (max-width: 860px) {
+  .main-header__container {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 58px;
+  }
+
+  .main-header__logo {
+    margin-bottom: 23px;
+  }
+}

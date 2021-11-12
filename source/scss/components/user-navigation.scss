@@ -24,6 +24,7 @@
 
   &:hover {
     color: $color-light-blue;
+    text-decoration: none;
   }
 
   &:focus,
@@ -39,7 +40,6 @@
   line-height: 21px;
   color: $color-white;
   background-color: $color-links;
-  opacity: 1;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 
@@ -49,7 +49,30 @@
 
   &:focus,
   &:active {
-    opacity: 0.6;
     background-color: $color-dark-blue;
+  }
+
+  &:focus span,
+  &:active span {
+    opacity: 0.6;
+  }
+}
+
+.user-navigation__button span {
+  color: currentColor;
+  opacity: 1;
+}
+
+@media (max-width: 860px) {
+  .user-navigation {
+    flex-direction: column;
+  }
+
+  .user-navigation__button {
+    margin: 0;
+  }
+
+  .user-navigation__links {
+    margin-bottom: 15px;
   }
 }
